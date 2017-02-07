@@ -1,15 +1,20 @@
-//
-//  main.c
-//  test
-//
-//  Created by  Blue on 2017/1/19.
-//  Copyright © 2017年  Blue. All rights reserved.
-//
-
 #include <stdio.h>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
-    return 0;
+
+int main() {
+    int n;
+    
+    printf("Insert a number \n");
+    scanf("%d",&n);
+    
+    printf("sum : %d\n",sumr(n));
+    
+}
+int sumr(int n)
+{
+    int sum=0;
+    for (int i=1; i<=n; i++) {
+        sum=sum+i;
+    }
+    return sum;
 }
