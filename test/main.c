@@ -13,8 +13,10 @@ int main() {
 int sumr(int n)
 {
     int sum=0;
-    for (int i=1; i<=n; i++) {
-        sum=sum+i;
+    int i=0;
+    while (i<n) {
+    	i++;
+        sum+=i;
     }
     return sum;
 }
